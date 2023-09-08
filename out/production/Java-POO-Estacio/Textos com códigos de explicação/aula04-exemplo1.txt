@@ -1,0 +1,39 @@
+public class Televisor{
+
+    public int volume;
+    public int canal;
+    public boolean ligado;
+        
+    public void aumentarVolume(int volume){
+        this.volume = volume;
+        
+        if(this.volume < 30){
+            this.volume += 1;
+        }
+    }
+        
+    public void reduzirVolume(int volume){
+        this.volume = volume;
+        
+        if(this.volume > 0){
+            this.volume -= 1;
+        }
+    }
+        
+    public void trocarCanal(int canal){
+        
+    }
+        
+    public void String mostra(){
+        return "Canal: " + canal + " - Volume: " + volume;
+    }
+    
+    public void boolean ligarTv(){
+        ligado = true;
+    }
+    
+    public void boolean desligarTv(){
+        ligado = false;
+    }
+    
+}
